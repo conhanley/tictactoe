@@ -1,0 +1,12 @@
+<h1> <%= title %> </h1>
+<table>
+  <tr>
+    <th style="text-align:left">Player</th>
+  </tr>
+  <!--  Notice the loop goes over a few lines -->
+  <% for (var player in lobbyPlayerSet) { %>
+    <tr class="player">
+      <td> <%= player %> </td>
+    </tr>
+  <% } %> <!--  Close the loop  -->
+</table>
